@@ -77,6 +77,19 @@ session_start();
 					if (i < 10) {i = "0" + i}
 					return i;
 				}
+				
+				/*
+				* Remover alert depois de 5 segundos
+				*/
+				$(document).ready(function() {
+
+				  window.setTimeout(function() {
+				    $(".alert").fadeTo(1000, 0).slideUp(1000, function(){
+				      $(this).remove();
+				    });
+				  }, 5000);
+
+				});
 			</script>
 			<?php
 			if (isset($_SESSION['msg'])) {
