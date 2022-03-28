@@ -10,9 +10,9 @@
 $url = "https://api.directcallsoft.com/request_token";
 
 // CLIENT_ID que é fornecido pela DirectCall (Seu e-mail)
-$client_id = "informatica@labfdiniz.com.br";
+$client_id = "**********";
 // CLIENT_SECRET que é fornecido pela DirectCall (Código recebido por SMS)
-$client_secret = "3881632";
+$client_secret = "*********";
 
 // Dados em formato QUERY_STRING
 $data = http_build_query(array('client_id' => $client_id, 'client_secret' => $client_secret));
